@@ -211,3 +211,188 @@
 
 
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name - Web Profile</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+
+    header {
+      background: #333 url('assets/images/bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      text-align: center;
+      padding: 2em;
+    }
+
+    header img {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    nav {
+      text-align: center;
+      background-color: #333;
+      padding: 0.5em;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 1em;
+      cursor: pointer;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .section-container {
+      max-width: 800px;
+      margin: 2em auto;
+      padding: 1em;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      margin-top: 1em;
+    }
+
+    h1, h2 {
+      color: #333;
+    }
+
+    p {
+      line-height: 1.6;
+      color: #555;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 0.5em;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1em 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="assets/images/profile.jpg" alt="Profile Photo">
+    <h1>Your Full Name</h1>
+    <p>Researcher in [Your Field]</p>
+  </header>
+
+  <nav>
+    <a onclick="scrollToSection('about')">About Me</a>
+    <a onclick="scrollToSection('research')">Research Interests</a>
+    <a onclick="scrollToSection('education')">Education</a>
+    <a onclick="scrollToSection('experience')">Experience</a>
+    <a onclick="scrollToSection('projects')">Projects</a>
+    <a onclick="scrollToSection('contact')">Contact</a>
+    <a onclick="scrollToSection('scholar')">Google Scholar</a>
+    <a onclick="scrollToSection('twitter')">Twitter</a>
+  </nav>
+
+  <div id="about" class="section-container">
+    <h2>About Me</h2>
+    <p>
+      Welcome to my professional web profile. I am a passionate researcher dedicated to [your research interests].
+      This is a brief overview of my academic background, research, and interests.
+    </p>
+  </div>
+
+  <div id="research" class="section-container">
+    <h2>Research Interests</h2>
+    <p class="research-interests">
+      My research interests include [list your main research areas], and I am actively involved in [mention any ongoing projects or collaborations].
+    </p>
+  </div>
+
+  <div id="education" class="section-container">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>Degree in [Your Field]</strong> - University Name, Year</li>
+      <!-- Add more education details as needed -->
+    </ul>
+  </div>
+
+  <div id="experience" class="section-container">
+    <h2>Experience</h2>
+    <ul class="experience">
+      <li><strong>[Job Title]</strong> - Company/Institution, Year</li>
+      <!-- Add more experience details as needed -->
+    </ul>
+  </div>
+
+  <div id="projects" class="section-container">
+    <h2>Projects</h2>
+    <ul class="projects">
+      <li><strong>[Project Title]</strong> - Description, Year</li>
+      <!-- Add more project details as needed -->
+    </ul>
+  </div>
+
+  <div id="contact" class="section-container">
+    <h2>Contact</h2>
+    <p>
+      Feel free to reach out to me via email at <a href="mailto:your.email@example.com">your.email@example.com</a>.
+    </p>
+  </div>
+
+  <div id="scholar" class="section-container">
+    <h2>Google Scholar</h2>
+    <p>
+      Explore my research publications on <a href="https://scholar.google.com/citations/[YourProfileID]" target="_blank">Google Scholar</a>.
+    </p>
+  </div>
+
+  <div id="twitter" class="section-container">
+    <h2>Twitter</h2>
+    <p>
+      Connect with me on <a href="https://twitter.com/YourTwitterHandle" target="_blank">Twitter</a>.
+    </p>
+  </div>
+
+  <footer>
+    &copy; 2024 Your Name - Web Profile
+  </footer>
+
+  <script>
+    function scrollToSection(sectionId) {
+      document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+
+</body>
+</html>
