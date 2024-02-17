@@ -6,16 +6,17 @@
   <title>Research Profile</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f4f4f4;
+      background-color: #f8f8f8;
+      color: #333;
     }
 
     #header {
-      background-color: #333;
+      background-color: #4CAF50;
       color: #fff;
-      padding: 20px;
+      padding: 30px 20px;
       text-align: center;
     }
 
@@ -33,7 +34,15 @@
       padding: 20px;
       background-color: #fff;
       border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    h1, h2, h3 {
+      color: #333;
+    }
+
+    p {
+      line-height: 1.6;
     }
 
     nav {
@@ -43,16 +52,59 @@
 
     nav a {
       text-decoration: none;
-      color: #333;
+      color: #4CAF50;
       padding: 10px 20px;
       margin: 0 10px;
       border-radius: 5px;
-      background-color: #eee;
-      transition: background-color 0.3s ease;
+      background-color: #fff;
+      border: 1px solid #4CAF50;
+      transition: background-color 0.3s ease, color 0.3s ease;
     }
 
     nav a:hover {
-      background-color: #ddd;
+      background-color: #4CAF50;
+      color: #fff;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    section h2 {
+      color: #4CAF50;
+      border-bottom: 2px solid #4CAF50;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+    }
+
+    .highlight {
+      background-color: #f0f0f0;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .quote {
+      font-style: italic;
+      margin-top: 10px;
+      color: #666;
+    }
+
+    .project {
+      margin-bottom: 20px;
+    }
+
+    .project h3 {
+      margin-bottom: 10px;
+    }
+
+    .project p {
+      margin-bottom: 5px;
+    }
+
+    .project img {
+      max-width: 100%;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
   </style>
 </head>
@@ -60,19 +112,63 @@
   <header id="header">
     <h1>John Doe</h1>
     <img src="profile-pic.jpg" alt="Profile Picture" id="profile-pic">
+    <p>Researcher in Artificial Intelligence</p>
   </header>
   <div id="content">
-    <h2>About Me</h2>
-    <p>I am a passionate researcher with a focus on artificial intelligence and machine learning. I have a strong background in computer science and mathematics, and I enjoy exploring innovative solutions to complex problems.</p>
-    <h2>Research Interests</h2>
-    <p>My research interests include natural language processing, computer vision, reinforcement learning, and data mining. I am particularly interested in developing algorithms that can learn from large-scale datasets and make accurate predictions.</p>
     <nav>
       <a href="#about">About</a>
       <a href="#interests">Interests</a>
       <a href="#publications">Publications</a>
+      <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </nav>
+    
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I am a passionate researcher with expertise in artificial intelligence, machine learning, and natural language processing. I hold a Ph.D. in Computer Science and have been involved in various research projects aimed at advancing the field of AI.</p>
+    </section>
+
+    <section id="interests">
+      <h2>Research Interests</h2>
+      <p>My research interests span a wide range of topics within AI, including:</p>
+      <ul>
+        <li>Natural Language Processing</li>
+        <li>Computer Vision</li>
+        <li>Deep Learning</li>
+        <li>Reinforcement Learning</li>
+        <li>Data Mining</li>
+      </ul>
+    </section>
+
+    <section id="publications">
+      <h2>Publications</h2>
+      <div class="highlight">
+        <p>Doe, J., & Smith, A. (2023). Advancements in Neural Machine Translation. <em>Journal of Artificial Intelligence Research</em>, 25(3), 123-135.</p>
+        <p>Smith, A., & Doe, J. (2022). Deep Reinforcement Learning for Autonomous Driving. <em>IEEE Transactions on Intelligent Transportation Systems</em>, 10(4), 567-579.</p>
+        <p>Doe, J., & Johnson, B. (2021). Image Captioning with Attention Mechanisms. <em>Computer Vision and Image Understanding</em>, 145, 78-89.</p>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Project 1: Sentiment Analysis of Social Media Data</h3>
+        <p>Implemented a deep learning model to perform sentiment analysis on large-scale social media data.</p>
+        <img src="project1.jpg" alt="Project 1">
+      </div>
+      <div class="project">
+        <h3>Project 2: Autonomous Drone Navigation</h3>
+        <p>Developed algorithms for autonomous navigation of drones using computer vision and reinforcement learning techniques.</p>
+        <img src="project2.jpg" alt="Project 2">
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>If you'd like to get in touch, feel free to reach out to me:</p>
+      <p>Email: john.doe@example.com</p>
+      <p>Phone: +1 (123) 456-7890</p>
+    </section>
   </div>
 </body>
 </html>
-
