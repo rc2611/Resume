@@ -1,189 +1,77 @@
-</html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name - Web Profile</title>
+  <title>Research Profile</title>
   <style>
     body {
-      font-family: 'Arial', sans-serif;
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f5f5f5;
+      background-color: #f4f4f4;
     }
 
-    header {
+    #header {
       background-color: #333;
       color: #fff;
+      padding: 20px;
       text-align: center;
-      padding: 2em;
-      background-size: 100% 300px;; /* Adjusted background size */
-      background-position: center; /* Center the background */
     }
 
-    header img {
+    #profile-pic {
       border-radius: 50%;
-      width: 200px;
-      height: 200px;
+      width: 150px;
+      height: 150px;
       object-fit: cover;
+      margin-top: 20px;
     }
+
+    #content {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
     nav {
       text-align: center;
-      background-color: #333;
-      padding: 0.5em;
+      margin-top: 20px;
     }
 
     nav a {
-      color: #fff;
       text-decoration: none;
-      margin: 0 1em;
-      cursor: pointer;
+      color: #333;
+      padding: 10px 20px;
+      margin: 0 10px;
+      border-radius: 5px;
+      background-color: #eee;
+      transition: background-color 0.3s ease;
     }
 
     nav a:hover {
-      text-decoration: underline;
-    }
-
-    .section-container {
-      max-width: 800px;
-      margin: 2em auto;
-      padding: 1em;
-      background-color: #fff;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      border-radius: 8px;
-      margin-top: 1em;
-    }
-
-    h1, h2 {
-      color: #333;
-    }
-
-    p {
-      line-height: 1.6;
-      color: #555;
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    li {
-      margin-bottom: 0.5em;
-    }
-
-    footer {
-      background-color: #333;
-      color: #fff;
-      text-align: center;
-      padding: 1em 0;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-    }
-
-    a {
-      color: #007bff;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
+      background-color: #ddd;
     }
   </style>
 </head>
 <body>
-
-  <header>
-    <img class='img-circle' width='65%' height='65%'img src="assets/images/egu5.jpg" alt="">
-    <h1><span style="color:White;">Rajat Choudhary</span></h1>
-    <p><span style="color:light grey;">Doctoral Student at IIT Delhi | Hydro-climatic eXtremes Research Group (HydroX)</span> </p>
+  <header id="header">
+    <h1>Research Profile</h1>
+    <img src="profile-pic.jpg" alt="Profile Picture" id="profile-pic">
   </header>
-
-  <nav>
-    <a onclick="scrollToSection('about')">About Me</a>
-    <a onclick="scrollToSection('research')">Research Interests</a>
-    <a onclick="scrollToSection('education')">Education</a>
-    <a onclick="scrollToSection('experience')">Experience</a>
-    <a onclick="scrollToSection('projects')">Projects</a>
-    <a onclick="scrollToSection('contact')">Contact</a>
-    <a onclick="scrollToSection('scholar')">Publications</a>
-  </nav>
-
-  <div id="about" class="section-container">
+  <div id="content">
     <h2>About Me</h2>
-    <p>
-I am deeply fascinated by the significant impact of atmospheric moisture transport on hydrological extremes, such as floods, droughts, and other water-related phenomena. My focus is on unravelling the pivotal role it plays in these events.
-    </p>
-  </div>
-
-  <div id="research" class="section-container">
+    <p>Insert your bio here.</p>
     <h2>Research Interests</h2>
-    <p class="research-interests">
-      My research interests include [list your main research areas], and I am actively involved in [mention any ongoing projects or collaborations].
-    </p>
+    <p>Insert your research interests here.</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#interests">Interests</a>
+      <a href="#publications">Publications</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </div>
-
-  <div id="education" class="section-container">
-    <h2>Education</h2>
-    <ul>
-      <li><strong>Doctor of Philosophy</strong> - Indian Institute Of Technology–Delhi (IIT–Delhi), Sept 2020-Present.<br><b><span style="color:SteelBlue;">Research Area: Atmospheric Moisture Tracking.</span></b> </br></li>
-      </n>
-      <li><strong>MS(Research)-Water Resource Engineering</strong> - Indian Institute Of Technology–Palakkad (IIT–Palakkad) ,July 2018 - July 2020.<br><b><span style="color:SteelBlue;">Thesis Title: A Modified Calibration Approach for SWAT Model to Improve the Process Representation.</span></b></br></li> 
-      </n>
-      <li><strong>MS(Research)-Semester Exchange</strong> - Indian Institute Of Technology–Madras (IIT–Madras) ,July 2018 - Dec 2018.<br><b><span style="color:SteelBlue;">MS-Course Work</span></b></br></li> 
-       </n>
-      <li><strong>B.Tech-Civil Engineering</strong> - National Institute of Technology Hamirpur (NIT Hamirpur) ,July 2013 - June 2017. <br><b><span style="color:SteelBlue;">Static and Dynamic analysis of ITI Karsog Building,Himachal Pradesh.</span></b></br></li> 
-      
-    </ul>
-  </div>
-    </ul>
-  </div>
-
-  <div id="experience" class="section-container">
-    <h2>Experience</h2>
-    <ul class="experience">
-      <li><strong>Graduate Engineer Trainee</strong> - Larsen & Toubro,July 2017 - December 2017.<br>Construction of Water treatment and Sewage Treatment Plants</br></li>
-         <li><strong>Intern</strong> - National Thermal Power Corporation Limited, Noida,May2016-July2016.<br>Structural analysis using STAAD Pro</br></li>
-    </ul>
-  </div>
-
-  <div id="projects" class="section-container">
-    <h2>Projects</h2>
-    <ul class="projects">
-      <li><strong>[Project Title]</strong> - Description, Year</li>
-      <!-- Add more project details as needed -->
-    </ul>
-  </div>
-
-  <div id="contact" class="section-container">
-    <h2>Contact</h2>
-   <p>Rajat (Research Scholar)<br>
-    Water Resources Engineering Section<br>
-    Department of Civil Engineering<br>
-    Indian Institute of Technology (IIT) Delhi<br>
-    Hauz Khas, New Delhi - 110016, India.<br>
-    Feel free to reach out to me via email at <a href="mailto:rajatnit101@gmail.com">rajatnit101@gmail.com</a>.<br>
-    Connect with me on <a href="https://twitter.com/Rajat___C" target="_blank">Twitter</a>.
-    </p>
-  </div>
-
-  <div id="scholar" class="section-container">
-    <h2>Publications</h2>
-    <p>
-      Explore my research publications on <a href="https://scholar.google.com/citations?user=Mpm2EIMAAAAJ&hl=en&authuser=1" target="_blank">Google Scholar</a>.
-    </p>
-  </div>
-  <footer>
-    &copy; 2024 Your Name - Web Profile
-  </footer>
-
-  <script>
-    function scrollToSection(sectionId) {
-      document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
-    }
-  </script>
-
 </body>
 </html>
